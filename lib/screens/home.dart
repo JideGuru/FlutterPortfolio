@@ -12,12 +12,7 @@ class Home extends StatelessWidget {
           children: <Widget>[
 
             Container(
-              decoration: BoxDecoration(
-                    borderRadius: BorderRadius.only(
-                      topRight: Radius.circular(20.0),
-                      bottomRight: Radius.circular(20.0),
-                    ),
-                  ),
+              
               width: MediaQuery.of(context).size.width /2.9,
               height: MediaQuery.of(context).size.height,
               color: Colors.grey[100],
@@ -31,7 +26,13 @@ class Home extends StatelessWidget {
                       Container(
                         child: CircleAvatar(
                           radius: 50.0,
-                          child: Text("J"),
+                          child: ClipOval(
+                            child: Image.asset(
+                              'https://jideguru.github.io/static/img/profile.png',
+                              height: 190.0,
+                              fit: BoxFit.fill,
+                            ),
+                          ),
                         ),
                       ),
                     
@@ -121,9 +122,13 @@ class Home extends StatelessWidget {
                           child: SizedBox(
                             width: MediaQuery.of(context).size.width / 1.8,
                             child: Text(
-                              "To be a world class individual and leader capable of influencing my community positively and utilise my analytical, "
-                              "organizational, and leadership skills, while attaining excellence and creating value within my organisation."
-                              "My stack includes HTML5 & CSS3, Dart, Javascript(Expressjs), MongoDB, Git, Vuejs and MySQL",
+                              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod "
+                              "tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
+                              "quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo "
+                              "consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse "
+                              "cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat "
+                              "non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+
                               style: TextStyle(
                                 fontSize: 17.0,
                                 
@@ -133,14 +138,19 @@ class Home extends StatelessWidget {
                           )
                         ),
 
-                        Container(
-                          padding: EdgeInsets.only(top: 40.0, bottom: 30.0),
-                          child: RaisedButton(
-                            child: Text("View Complete Stack"),
-                            color: Colors.blue,
-                            onPressed: (){},
-                          ),
-                        ),
+                        // Container(
+                        //   padding: EdgeInsets.only(top: 40.0, bottom: 30.0),
+                        //   child: RaisedButton(
+                        //     child: Text(
+                        //       "View Complete Stack", 
+                        //       style: TextStyle(
+                        //         color: Colors.white,
+                        //       ),
+                        //     ),
+                        //     color: Colors.blue,
+                        //     onPressed: (){},
+                        //   ),
+                        // ),
 
                         Divider(),
 
@@ -153,6 +163,23 @@ class Home extends StatelessWidget {
                               fontSize: 20.0,
                             ),
                           ),
+                        ),
+
+                        Row(
+                          children: <Widget>[
+                            SizedBox(
+                              width: MediaQuery.of(context).size.width / 3,
+                              child: Card(
+
+                              ),
+                            ),
+                            SizedBox(
+                              width: MediaQuery.of(context).size.width / 3,
+                              child: Card(
+                                
+                              ),
+                            ),
+                          ],
                         ),
 
 
