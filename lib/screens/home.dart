@@ -346,8 +346,8 @@ class Home extends StatelessWidget {
 
       floatingActionButton: FloatingActionButton.extended(
         onPressed: (){},
-        // icon: Icon(Icons.mail),
-        label: Text('📧Email Me'),
+        icon: Icon(Icons.mail),
+        label: Text('Email Me'),
       ),
     );
   }

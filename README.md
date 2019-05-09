@@ -14,7 +14,7 @@ A very simple Portfolio made with FLutter Web.
 
 ## ‼️ Disclaimer
 
-This is just a simple project a made as my first FLutter web project for practice sake, took only a few hours so its not **perfect**
+This is just a simple project i made as my **first Flutter web project** for practice sake, took only a few hours so its not **perfect**
 
 
 ## 🤓 Author(s)
