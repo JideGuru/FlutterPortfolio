@@ -5,7 +5,7 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.grey[50],
       body: Container(
         child: Row(
           
@@ -27,7 +27,7 @@ class Home extends StatelessWidget {
                         child: CircleAvatar(
                           radius: 50.0,
                           child: ClipOval(
-                            child: Image.asset(
+                            child: Image.network(
                               'https://jideguru.github.io/static/img/profile.png',
                               height: 190.0,
                               fit: BoxFit.fill,
@@ -103,7 +103,7 @@ class Home extends StatelessWidget {
             ),
 
             Container(
-              padding: EdgeInsets.only(top:100.0, right: 40.0, left: 40.0),
+              padding: EdgeInsets.only(top:40.0, right: 40.0, left: 40.0),
               child: SingleChildScrollView(
                 child: Stack(
                   children: <Widget>[
@@ -167,21 +167,172 @@ class Home extends StatelessWidget {
 
                         Row(
                           children: <Widget>[
+                            
                             SizedBox(
-                              width: MediaQuery.of(context).size.width / 3,
+                              width: MediaQuery.of(context).size.width / 3.9,
                               child: Card(
+                                elevation: 2.0,
+                                child: Column(
+                                  children: <Widget>[
+                                    Image.network(
+                                      'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png',
+                                      height: 200.0,
+                                      width: MediaQuery.of(context).size.width / 3.9,
+                                      fit: BoxFit.fill,
+                                    ),
+                                    SizedBox(height: 10.0),
 
+                                    Text(
+                                      "Project 1",
+                                      style: TextStyle(
+                                        fontSize: 20.0,
+                                        fontWeight: FontWeight.w700,
+                                      ),
+                                    ),
+
+                                    SizedBox(height: 10.0),
+
+                                    Text(
+                                      "Lorem Ipsum Dolor Alat",
+                                      style: TextStyle(
+                                        fontSize: 15.0,
+                                        fontWeight: FontWeight.w400,
+                                      ),
+                                    ),
+
+                                    SizedBox(height: 10.0),
+                                  ],
+                                ),
                               ),
                             ),
+
+                            SizedBox(width: 10.0),
+
                             SizedBox(
-                              width: MediaQuery.of(context).size.width / 3,
+                              width: MediaQuery.of(context).size.width / 3.9,
                               child: Card(
-                                
+                                elevation: 2.0,
+                                child: Column(
+                                  children: <Widget>[
+                                    Image.network(
+                                      'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png',
+                                      height: 200.0,
+                                      width: MediaQuery.of(context).size.width / 3.9,
+                                      fit: BoxFit.fill,
+                                    ),
+                                    SizedBox(height: 10.0),
+
+                                    Text(
+                                      "Project 2",
+                                      style: TextStyle(
+                                        fontSize: 20.0,
+                                        fontWeight: FontWeight.w700,
+                                      ),
+                                    ),
+
+                                    SizedBox(height: 10.0),
+
+                                    Text(
+                                      "Lorem Ipsum Dolor Alat",
+                                      style: TextStyle(
+                                        fontSize: 15.0,
+                                        fontWeight: FontWeight.w400,
+                                      ),
+                                    ),
+
+                                    SizedBox(height: 10.0),
+                                  ],
+                                ),
                               ),
                             ),
                           ],
                         ),
 
+
+                        SizedBox(height: 20.0),
+
+                        Row(
+                          children: <Widget>[
+                            SizedBox(
+                              width: MediaQuery.of(context).size.width / 3.9,
+                              child: Card(
+                                elevation: 2.0,
+                                child: Column(
+                                  children: <Widget>[
+                                    Image.network(
+                                      'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png',
+                                      height: 200.0,
+                                      width: MediaQuery.of(context).size.width / 3.9,
+                                      fit: BoxFit.fill,
+                                    ),
+                                    SizedBox(height: 10.0),
+
+                                    Text(
+                                      "Project 3",
+                                      style: TextStyle(
+                                        fontSize: 20.0,
+                                        fontWeight: FontWeight.w700,
+                                      ),
+                                    ),
+
+                                    SizedBox(height: 10.0),
+
+                                    Text(
+                                      "Lorem Ipsum Dolor Alat",
+                                      style: TextStyle(
+                                        fontSize: 15.0,
+                                        fontWeight: FontWeight.w400,
+                                      ),
+                                    ),
+
+                                    SizedBox(height: 10.0),
+                                  ],
+                                ),
+                              ),
+                            ),
+
+                            SizedBox(width: 10.0),
+
+                            SizedBox(
+                              width: MediaQuery.of(context).size.width / 3.9,
+                              child: Card(
+                                elevation: 2.0,
+                                child: Column(
+                                  children: <Widget>[
+                                    Image.network(
+                                      'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png',
+                                      height: 200.0,
+                                      width: MediaQuery.of(context).size.width / 3.9,
+                                      fit: BoxFit.fill,
+                                    ),
+                                    SizedBox(height: 10.0),
+
+                                    Text(
+                                      "Project 4",
+                                      style: TextStyle(
+                                        fontSize: 20.0,
+                                        fontWeight: FontWeight.w700,
+                                      ),
+                                    ),
+
+                                    SizedBox(height: 10.0),
+
+                                    Text(
+                                      "Lorem Ipsum Dolor Alat",
+                                      style: TextStyle(
+                                        fontSize: 15.0,
+                                        fontWeight: FontWeight.w400,
+                                      ),
+                                    ),
+
+                                    SizedBox(height: 10.0),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                        SizedBox(height: 20.0),
 
                       ],
                     ),
@@ -195,8 +346,8 @@ class Home extends StatelessWidget {
 
       floatingActionButton: FloatingActionButton.extended(
         onPressed: (){},
-        icon: Icon(Icons.mail),
-        label: Text('Mail Me'),
+        // icon: Icon(Icons.mail),
+        label: Text('📧Email Me'),
       ),
     );
   }
